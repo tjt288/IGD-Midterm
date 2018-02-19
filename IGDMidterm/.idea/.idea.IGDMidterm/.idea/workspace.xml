@@ -11,10 +11,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MovePlayer.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MovePlayer.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/MovePlayer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="460">
               <caret line="28" column="59" lean-forward="false" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
               <folding>
                 <marker date="1519068452706" expanded="false" signature="6:95" ph="..." />
@@ -30,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HockeyStick.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HockeyStick.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/HockeyStick.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
@@ -87,6 +87,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -100,7 +101,6 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -137,11 +137,12 @@
       <workItem from="1518708416522" duration="1241000" />
       <workItem from="1518710096673" duration="3335000" />
       <workItem from="1519068279991" duration="3154000" />
+      <workItem from="1519073773400" duration="586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7730000" />
+    <option name="totallyTimeSpent" value="8316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -159,22 +160,22 @@
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -192,41 +193,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/MovePlayer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1519068452706" expanded="false" signature="6:95" ph="..." />
-            <marker date="1519068452706" expanded="true" signature="136:1193" ph="{...}" />
-            <marker date="1519068452706" expanded="true" signature="301:363" ph="{...}" />
-            <marker date="1519068452706" expanded="true" signature="418:1191" ph="{...}" />
-            <marker date="1519068452706" expanded="true" signature="484:668" ph="{...}" />
-            <marker date="1519068452706" expanded="true" signature="737:922" ph="{...}" />
-            <marker date="1519068452706" expanded="true" signature="992:1054" ph="{...}" />
-            <marker date="1519068452706" expanded="true" signature="1123:1185" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/MovePlayer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1519068452706" expanded="false" signature="6:95" ph="..." />
-            <marker date="1519068452706" expanded="true" signature="136:1193" ph="{...}" />
-            <marker date="1519068452706" expanded="true" signature="301:363" ph="{...}" />
-            <marker date="1519068452706" expanded="true" signature="418:1191" ph="{...}" />
-            <marker date="1519068452706" expanded="true" signature="484:668" ph="{...}" />
-            <marker date="1519068452706" expanded="true" signature="737:922" ph="{...}" />
-            <marker date="1519068452706" expanded="true" signature="992:1054" ph="{...}" />
-            <marker date="1519068452706" expanded="true" signature="1123:1185" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/MovePlayer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="475">
           <caret line="28" column="59" lean-forward="false" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
           <folding>
             <marker date="1519068452706" expanded="false" signature="6:95" ph="..." />
@@ -251,6 +218,71 @@
             <marker date="1519070970770" expanded="true" signature="171:178" ph="{...}" />
             <marker date="1519070970770" expanded="true" signature="232:721" ph="{...}" />
             <marker date="1519070970770" expanded="true" signature="480:717" ph="/* var pos = Camera.main.WorldToScreenPoint(transform.position); ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MovePlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1519068452706" expanded="false" signature="6:95" ph="..." />
+            <marker date="1519068452706" expanded="true" signature="136:1193" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="301:363" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="418:1191" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="484:668" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="737:922" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="992:1054" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="1123:1185" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MovePlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1519068452706" expanded="false" signature="6:95" ph="..." />
+            <marker date="1519068452706" expanded="true" signature="136:1193" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="301:363" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="418:1191" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="484:668" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="737:922" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="992:1054" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="1123:1185" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/HockeyStick.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" column="148" lean-forward="false" selection-start-line="15" selection-start-column="148" selection-end-line="15" selection-end-column="148" />
+          <folding>
+            <marker date="1519070970770" expanded="false" signature="6:78" ph="..." />
+            <marker date="1519070970770" expanded="true" signature="121:723" ph="{...}" />
+            <marker date="1519070970770" expanded="true" signature="171:178" ph="{...}" />
+            <marker date="1519070970770" expanded="true" signature="232:721" ph="{...}" />
+            <marker date="1519070970770" expanded="true" signature="480:717" ph="/* var pos = Camera.main.WorldToScreenPoint(transform.position); ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MovePlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="28" column="59" lean-forward="false" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+          <folding>
+            <marker date="1519068452706" expanded="false" signature="6:95" ph="..." />
+            <marker date="1519068452706" expanded="true" signature="136:1193" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="301:363" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="418:1191" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="484:668" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="737:922" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="992:1054" ph="{...}" />
+            <marker date="1519068452706" expanded="true" signature="1123:1185" ph="{...}" />
           </folding>
         </state>
       </provider>

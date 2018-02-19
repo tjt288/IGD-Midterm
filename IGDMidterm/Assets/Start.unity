@@ -126,9 +126,9 @@ GameObject:
   - component: {fileID: 103251587}
   - component: {fileID: 103251586}
   - component: {fileID: 103251591}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -326,9 +326,9 @@ GameObject:
   - component: {fileID: 388124635}
   - component: {fileID: 388124634}
   - component: {fileID: 388124633}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stick
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -542,7 +542,7 @@ CapsuleCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 764182527}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: a1155aba2dfe78d4d821e2cac5c8454b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -595,9 +595,9 @@ GameObject:
   - component: {fileID: 1503560591}
   - component: {fileID: 1503560590}
   - component: {fileID: 1503560589}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -823,9 +823,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1908968949}
   - component: {fileID: 1908968948}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stick
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
