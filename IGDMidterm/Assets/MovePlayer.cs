@@ -8,7 +8,7 @@ public class MovePlayer : MonoBehaviour
 	private Rigidbody playerBody;
 	public float forwardForce;
 	public float backwardForce;
-	public float turnForce;
+	public float maxVelocity;
 	
 	// Use this for initialization
 	void Start () {
@@ -38,6 +38,26 @@ public class MovePlayer : MonoBehaviour
 		if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
 		{
 			transform.localEulerAngles -= new Vector3(0,2f,0);
+		}
+
+		if (playerBody.velocity.x > maxVelocity)
+		{
+			playerBody.velocity = new Vector3(maxVelocity, playerBody.velocity.y, playerBody.velocity.z);
+		}
+		
+		if (playerBody.velocity.x < -maxVelocity)
+		{
+			playerBody.velocity = new Vector3(-maxVelocity, playerBody.velocity.y, playerBody.velocity.z);
+		}
+		
+		if (playerBody.velocity.z > maxVelocity)
+		{
+			playerBody.velocity = new Vector3(playerBody.velocity.x, playerBody.velocity.y, maxVelocity);
+		}
+		
+		if (playerBody.velocity.z < -maxVelocity)
+		{
+			playerBody.velocity = new Vector3(playerBody.velocity.x, playerBody.velocity.y, -maxVelocity);
 		}
 		
 	}

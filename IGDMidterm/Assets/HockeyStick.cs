@@ -15,7 +15,7 @@ public class HockeyStick : MonoBehaviour {
 
 //		this.transform.position = GameObject.Find("Player").transform.position + new Vector3(0, -GameObject.Find("Player").transform.position.y + 1f, 1f);
 
-		this.transform.eulerAngles = Camera.main.ScreenToViewportPoint(Input.mousePosition) * 100;
+		this.transform.eulerAngles = new Vector3(0,Camera.main.ScreenToViewportPoint(Input.mousePosition).y,0) * 100;
 //		var pos = Camera.main.WorldToScreenPoint(transform.position);
 //		var dir = Input.mousePosition - pos;
 //		var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
