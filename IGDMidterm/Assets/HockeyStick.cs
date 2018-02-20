@@ -13,7 +13,7 @@ public class HockeyStick : MonoBehaviour {
 	void Update ()
 	{
 
-		this.transform.position = GameObject.Find("Player").transform.position + new Vector3(0, -GameObject.Find("Player").transform.position.y + 1f, 1f);
+//		this.transform.position = GameObject.Find("Player").transform.position + new Vector3(0, -GameObject.Find("Player").transform.position.y + 1f, 1f);
 
 		this.transform.eulerAngles = Camera.main.ScreenToViewportPoint(Input.mousePosition) * 100;
 //		var pos = Camera.main.WorldToScreenPoint(transform.position);
@@ -21,5 +21,13 @@ public class HockeyStick : MonoBehaviour {
 //		var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 //		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); 
 
+	}
+
+	private void OnCollisionEnter(Collision other)
+	{
+		if (Input.GetKey(KeyCode.Mouse0))
+		{
+//			other.rigidbody.AddRelativeForce((GameObject.Find("Cube").transform.position - other.transform.position) * 100);
+		}
 	}
 }

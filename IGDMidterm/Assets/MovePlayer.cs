@@ -20,14 +20,14 @@ public class MovePlayer : MonoBehaviour
 
 		if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
 		{
-			playerBody.AddForceAtPosition(new Vector3(0,0,forwardForce), transform.position + new Vector3(0,.1f,.1f));
-//			playerBody.AddRelativeForce(Vector3.forward * forwardForce);
+//			playerBody.AddForceAtPosition(new Vector3(0,0,forwardForce), transform.position + new Vector3(0,.1f,.1f));
+			playerBody.AddRelativeForce(Vector3.forward * forwardForce);
 		}
 		
 		if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
 		{
-			playerBody.AddForceAtPosition(new Vector3(0,0,-backwardForce), transform.position + new Vector3(0,.1f,-.1f));
-//			playerBody.AddRelativeForce(Vector3.back * backwardForce);
+//			playerBody.AddForceAtPosition(new Vector3(0,0,-backwardForce), transform.position + new Vector3(0,.1f,-.1f));
+			playerBody.AddRelativeForce(Vector3.back * backwardForce);
 		}
 		
 		if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
