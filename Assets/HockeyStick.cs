@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HockeyStick : MonoBehaviour {
-
+public class HockeyStick : MonoBehaviour
+{
 	// Use this for initialization
 	void Start () {
 		
@@ -20,14 +20,13 @@ public class HockeyStick : MonoBehaviour {
 //		var dir = Input.mousePosition - pos;
 //		var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 //		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); 
-
 	}
 
 	private void OnCollisionEnter(Collision other)
 	{
 		if (Input.GetKey(KeyCode.Mouse0))
 		{
-//			other.rigidbody.AddRelativeForce((GameObject.Find("Cube").transform.position - other.transform.position) * 100);
+//			other.rigidbody.AddRelativeForce((GameObject.Find("Base").transform.position - other.transform.position) * 100);
 		}
 	}
 }
