@@ -1,17 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Score : MonoBehaviour {
 
+	private int count = 1;
+	private bool startTimer = false;
+	private float Timer = 5f;
+	
 	// Use this for initialization
 	void Start () {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+	{
+		if (startTimer == true)
+		{
+			Timer -= Time.deltaTime;
+		}
+
+		if (Timer <= 0)
+		{
+			count++;
+			startTimer = false;
+			Timer = 5f;
+			SceneManager.LoadScene(count);
+		}
+
 	}
 
 	private void OnTriggerEnter(Collider other)
@@ -19,6 +37,7 @@ public class Score : MonoBehaviour {
 		if (other.name.Contains("Puck"))
 		{
 			this.GetComponent<AudioSource>().Play();
+			startTimer = true;
 		}
 	}
 }
