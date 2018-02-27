@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Score : MonoBehaviour {
 
-	private int count = 1;
+	public int count;
 	private bool startTimer = false;
 	private float Timer = 5f;
 	
@@ -29,6 +29,13 @@ public class Score : MonoBehaviour {
 			Timer = 5f;
 			SceneManager.LoadScene(count);
 		}
+		
+		if (Input.GetKeyDown(KeyCode.R))
+		{
+			SceneManager.LoadScene(count);
+		}
+		
+		Debug.Log(count);
 
 	}
 
