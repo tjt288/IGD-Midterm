@@ -34,8 +34,6 @@ public class Score : MonoBehaviour {
 		{
 			SceneManager.LoadScene(count);
 		}
-		
-		Debug.Log(count);
 
 	}
 
