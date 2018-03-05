@@ -8,6 +8,7 @@ public class MovePlayer : MonoBehaviour
 	private Rigidbody playerBody;
 	public float forwardForce;
 	public float backwardForce;
+	public float sideForce;
 	public float maxVelocity;
 	
 	// Use this for initialization
@@ -20,24 +21,26 @@ public class MovePlayer : MonoBehaviour
 
 		if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
 		{
-//			playerBody.AddForceAtPosition(new Vector3(0,0,forwardForce), transform.position + new Vector3(0,.1f,.1f));
-			playerBody.AddRelativeForce(Vector3.forward * forwardForce);
+			playerBody.AddForceAtPosition(new Vector3(0,0,forwardForce), transform.position + new Vector3(0,.1f,.1f));
+//			playerBody.AddRelativeForce(Vector3.forward * forwardForce);
 		}
 		
 		if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
 		{
-//			playerBody.AddForceAtPosition(new Vector3(0,0,-backwardForce), transform.position + new Vector3(0,.1f,-.1f));
-			playerBody.AddRelativeForce(Vector3.back * backwardForce);
+			playerBody.AddForceAtPosition(new Vector3(0,0,-backwardForce), transform.position + new Vector3(0,.1f,-.1f));
+//			playerBody.AddRelativeForce(Vector3.back * backwardForce);
 		}
 		
 		if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
 		{
-			transform.localEulerAngles += new Vector3(0,2f,0);
+			playerBody.AddForceAtPosition(new Vector3(sideForce,0,0), transform.position + new Vector3(-.1f,.1f,0));
+//			transform.localEulerAngles += new Vector3(0,2f,0);
 		}
 		
 		if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
 		{
-			transform.localEulerAngles -= new Vector3(0,2f,0);
+			playerBody.AddForceAtPosition(new Vector3(-sideForce,0,0), transform.position + new Vector3(.1f,.1f,0));
+//			transform.localEulerAngles -= new Vector3(0,2f,0);
 		}
 
 		if (playerBody.velocity.x > maxVelocity)
