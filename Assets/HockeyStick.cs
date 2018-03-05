@@ -11,7 +11,7 @@ public class HockeyStick : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		this.transform.position = GameObject.Find("Player").transform.position + new Vector3(-.5f, 0, .5f);
+		this.transform.position = GameObject.Find("Player").transform.position + new Vector3(-.5f, -GameObject.Find("Player").transform.position.y + 1f, .5f);
 		if (Camera.main.ScreenToViewportPoint(Input.mousePosition).y < .5f && Camera.main.ScreenToViewportPoint(Input.mousePosition).x > .5f)
 		{
 			this.transform.eulerAngles = new Vector3(0,
