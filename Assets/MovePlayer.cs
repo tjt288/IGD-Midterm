@@ -16,8 +16,7 @@ public class MovePlayer : MonoBehaviour
 		playerBody = this.gameObject.GetComponent<Rigidbody>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
 		if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
 		{
