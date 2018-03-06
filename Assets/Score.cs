@@ -20,21 +20,30 @@ public class Score : MonoBehaviour {
 		if (startTimer == true)
 		{
 			Timer -= Time.deltaTime;
-		}
-
-		if (Timer <= 0)
-		{
-			count++;
-			startTimer = false;
-			Timer = 5f;
-			SceneManager.LoadScene(count);
+			if (Timer <= 0)
+			{
+				ChangeLevel(0);
+			}
 		}
 		
 		if (Input.GetKeyDown(KeyCode.R))
 		{
-			SceneManager.LoadScene(count);
+			ChangeLevel(0);
 		}
 
+	}
+
+	public void ChangeLevel(float time)
+	{
+		Timer = time;
+		startTimer = true;
+		
+		if (Timer <= 0)
+		{
+			startTimer = false;
+			Timer = 5f;
+			SceneManager.LoadScene(count);
+		}
 	}
 
 	private void OnTriggerEnter(Collider other)
@@ -42,7 +51,8 @@ public class Score : MonoBehaviour {
 		if (other.name.Contains("Puck"))
 		{
 			this.GetComponent<AudioSource>().Play();
-			startTimer = true;
+			count++;
+			ChangeLevel(5f);
 		}
 	}
 }

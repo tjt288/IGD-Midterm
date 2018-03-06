@@ -226,6 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85cb4b1d22081db4d8e93f6862eb378d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fall: 0
   forwardForce: 20
   backwardForce: 10
   sideForce: 10
@@ -770,7 +771,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1503560588}
   - component: {fileID: 1503560591}
-  - component: {fileID: 1503560590}
   - component: {fileID: 1503560589}
   - component: {fileID: 1503560593}
   - component: {fileID: 1503560592}
@@ -828,18 +828,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1503560590
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1503560587}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1503560591
 MeshFilter:
   m_ObjectHideFlags: 0

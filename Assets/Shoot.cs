@@ -17,10 +17,11 @@ public class Shoot : MonoBehaviour {
 		if (carryPuck == true)
 		{
 			GameObject.Find("Puck").transform.position = this.transform.position + this.transform.forward/3;
-			if (Input.GetKey(KeyCode.Mouse0))
+			if (Input.GetKey(KeyCode.Mouse0) && GameObject.Find("Player").GetComponent<MovePlayer>().fall == false)
 			{
-				GameObject.Find("Puck").GetComponent<Rigidbody>().AddForce((GameObject.Find("Puck").transform.position - this.transform.position) * 50, ForceMode.Impulse);
+				this.GetComponent<BoxCollider>().enabled = false;
 				carryPuck = false;
+				GameObject.Find("Puck").GetComponent<Rigidbody>().AddForce((GameObject.Find("Puck").transform.position - this.transform.position) * 50, ForceMode.Impulse);
 			}
 		}
 		

@@ -12,19 +12,23 @@ public class HockeyStick : MonoBehaviour
 	private void FixedUpdate()
 	{
 		this.transform.position = GameObject.Find("Player").transform.position + new Vector3(-.5f, -GameObject.Find("Player").transform.position.y + 1f, .5f);
-		if (Camera.main.ScreenToViewportPoint(Input.mousePosition).y < .5f && Camera.main.ScreenToViewportPoint(Input.mousePosition).x > .5f)
+		if (GameObject.Find("Player").GetComponent<MovePlayer>().fall == false)
 		{
-			this.transform.eulerAngles = new Vector3(0,
-				                             -1f +
-				                             Camera.main.ScreenToViewportPoint(Input.mousePosition).x +
-				                             1f - Camera.main.ScreenToViewportPoint(Input.mousePosition).y, 0) * 100;
-		}
-		else
-		{
-			this.transform.eulerAngles = new Vector3(0,
-				                             -1f +
-				                             Camera.main.ScreenToViewportPoint(Input.mousePosition).x +
-				                             .5f, 0) * 100;
+			if (Camera.main.ScreenToViewportPoint(Input.mousePosition).y < .5f &&
+			    Camera.main.ScreenToViewportPoint(Input.mousePosition).x > .5f)
+			{
+				this.transform.eulerAngles = new Vector3(0,
+					                             -1f +
+					                             Camera.main.ScreenToViewportPoint(Input.mousePosition).x +
+					                             1f - Camera.main.ScreenToViewportPoint(Input.mousePosition).y, 0) * 100;
+			}
+			else
+			{
+				this.transform.eulerAngles = new Vector3(0,
+					                             -1f +
+					                             Camera.main.ScreenToViewportPoint(Input.mousePosition).x +
+					                             .5f, 0) * 100;
+			}
 		}
 
 //		var pos = Camera.main.WorldToScreenPoint(transform.position);
