@@ -69,9 +69,13 @@ public class MovePlayer : MonoBehaviour
 		    || (this.transform.eulerAngles.x >= 269f && this.transform.eulerAngles.x <= 271f)
 		    || (this.transform.eulerAngles.z >= 269f && this.transform.eulerAngles.z <= 271f))		
 		{
-			playerBody.freezeRotation = true;
 			fall = true;
 			GameObject.Find("NetZone").GetComponent<Score>().ChangeLevel(3);
+		}
+
+		if (fall == true)
+		{
+			playerBody.freezeRotation = true;
 		}
 		
 	}
