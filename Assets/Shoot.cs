@@ -26,7 +26,7 @@ public class Shoot : MonoBehaviour {
 					this.GetComponent<BoxCollider>().enabled = false;
 					carryPuck = false;
 					GameObject.Find("Puck").GetComponent<Rigidbody>()
-						.AddForce((GameObject.Find("Puck").transform.position - this.transform.position) * 50, ForceMode.Impulse);
+						.AddForce((GameObject.Find("Puck").transform.position - this.transform.position) * 27.5f, ForceMode.Impulse);
 					GameObject.Find("Player").GetComponent<MovePlayer>().fall = true;
 					shot = true;
 				}
