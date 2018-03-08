@@ -74,6 +74,8 @@ public class MovePlayer : MonoBehaviour
 		{
 			fall = true;
 			GameObject.Find("NetZone").GetComponent<Score>().ChangeLevel(3);
+			this.GetComponent<AudioSource>().time = Random.Range(0, 10);
+			this.GetComponent<AudioSource>().Play();
 			onceOnly = true;
 		}
 

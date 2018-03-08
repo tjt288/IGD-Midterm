@@ -51,6 +51,7 @@ public class Score : MonoBehaviour {
 		if (other.name.Contains("Puck"))
 		{
 			this.GetComponent<AudioSource>().Play();
+			GameObject.Find("Cheering").GetComponent<AudioSource>().Play();
 			count++;
 			ChangeLevel(5f);
 		}
