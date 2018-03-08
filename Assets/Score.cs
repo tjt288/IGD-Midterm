@@ -26,10 +26,10 @@ public class Score : MonoBehaviour {
 			}
 		}
 		
-		if (Input.GetKeyDown(KeyCode.R))
-		{
-			ChangeLevel(0);
-		}
+//		if (Input.GetKeyDown(KeyCode.R))
+//		{
+//			ChangeLevel(0);
+//		}
 
 	}
 
