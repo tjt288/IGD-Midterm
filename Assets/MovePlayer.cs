@@ -6,6 +6,7 @@ using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
 	private Rigidbody playerBody;
+	private bool onceOnly;
 	public bool fall;
 	public float forwardForce;
 	public float backwardForce;
@@ -16,6 +17,7 @@ public class MovePlayer : MonoBehaviour
 	void Start () {
 		playerBody = this.gameObject.GetComponent<Rigidbody>();
 		fall = false;
+		onceOnly = false;
 	}
 	
 	void FixedUpdate () {
@@ -64,13 +66,15 @@ public class MovePlayer : MonoBehaviour
 			playerBody.velocity = new Vector3(playerBody.velocity.x, playerBody.velocity.y, -maxVelocity);
 		}
 
-		if ((this.transform.eulerAngles.x >= 89f && this.transform.eulerAngles.x <= 91f  )
+		if (((this.transform.eulerAngles.x >= 89f && this.transform.eulerAngles.x <= 91f  )
 		    || (this.transform.eulerAngles.z >= 89f && this.transform.eulerAngles.z <= 91f)
 		    || (this.transform.eulerAngles.x >= 269f && this.transform.eulerAngles.x <= 271f)
-		    || (this.transform.eulerAngles.z >= 269f && this.transform.eulerAngles.z <= 271f))		
+		    || (this.transform.eulerAngles.z >= 269f && this.transform.eulerAngles.z <= 271f))
+		    && onceOnly == false)		
 		{
 			fall = true;
 			GameObject.Find("NetZone").GetComponent<Score>().ChangeLevel(3);
+			onceOnly = true;
 		}
 
 		if (fall == true)
