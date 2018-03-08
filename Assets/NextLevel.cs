@@ -23,4 +23,14 @@ public class NextLevel : MonoBehaviour
 		count++;
 		SceneManager.LoadScene(count);
 	}
+	
+	public void OnClick2()
+	{
+		SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+	}
+	
+	public void OnClick3()
+	{
+		SceneManager.LoadScene(1);
+	}
 }
